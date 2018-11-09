@@ -4,6 +4,13 @@ fun meh(a: Int) = if (a > 1) {
     "meh"
 }
 
+class Widget {
+    val name: String = "A widget"
+    val length: Int = 2
+
+    fun meh() = name.toUpperCase() + length
+}
+
 fun main(args: Array<String>) {
     val things = listOf("c", "b", "a")
     val a = things.size
@@ -25,6 +32,10 @@ fun main(args: Array<String>) {
 
     val sortedAndMapped = things.sortedBy { it }.map { it.toUpperCase() }
     println(sortedAndMapped)
+
+    val myWidget = Widget()
+    println(myWidget.name)
+    println(myWidget.meh())
 
     println("Hello: " + meh(a))
 }
