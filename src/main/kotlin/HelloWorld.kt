@@ -1,10 +1,10 @@
 val a = 2
 
 fun meh(): String {
-    if (a > 1) {
-        return "ok"
+    return if (a > 1) {
+        "ok"
     } else {
-        return "meh"
+        "meh"
     }
 }
 
