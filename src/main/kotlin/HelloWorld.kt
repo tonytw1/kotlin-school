@@ -12,5 +12,11 @@ fun main(args: Array<String>) {
         println(t)
     }
 
+    for(thing in things) {
+        println("Looping: " + thing)
+    }
+
+    println(things[0])
+
     println("Hello: " + meh(a))
 }
