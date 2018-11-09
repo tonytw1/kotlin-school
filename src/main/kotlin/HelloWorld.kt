@@ -18,5 +18,10 @@ fun main(args: Array<String>) {
 
     println(things[0])
 
+    val oneToFive = 1..5
+    for(i in oneToFive) {
+        println(i)
+    }
+
     println("Hello: " + meh(a))
 }
