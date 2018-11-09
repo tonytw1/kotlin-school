@@ -5,7 +5,7 @@ fun meh(a: Int) = if (a > 1) {
 }
 
 fun main(args: Array<String>) {
-    val things = listOf("a", "b", "c")
+    val things = listOf("c", "b", "a")
     val a = things.size
 
     things.map { t ->
@@ -22,6 +22,9 @@ fun main(args: Array<String>) {
     for(i in oneToFive) {
         println(i)
     }
+
+    val sortedAndMapped = things.sortedBy { it }.map { it.toUpperCase() }
+    println(sortedAndMapped)
 
     println("Hello: " + meh(a))
 }
