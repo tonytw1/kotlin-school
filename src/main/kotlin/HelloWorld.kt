@@ -30,7 +30,7 @@ fun main(args: Array<String>) {
     val sortedAndMapped = things.sortedBy { it }.map { it.toUpperCase() }
     println(sortedAndMapped)
 
-    val myWidget = Widget("My widget", 2)
+    val myWidget = Widget(length = 2, name = "My widget")
     println(myWidget.name)
     println(myWidget.meh())
 
